@@ -1,0 +1,36 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #fff39ccd;
+}
+
+
+header {
+    background-color: #cfe2f3;
+    padding: 15px;
+}
+
+section h2 {
+    background-color: #b4c7dc;
+    padding: 5px;
+}
+
+section:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+figure {
+    width: 45%;
+    margin: 0;
+}
+
+figure img {
+    width: 60%;
+    height: auto;
+}
+
+footer {
+    padding: 10px 15px;
+    font-size: 0.9em;
+}
