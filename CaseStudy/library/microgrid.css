@@ -1,16 +1,20 @@
 /* Rules for all web pages */
-body {
+html, body {
+  height: 100%;       /* Make full viewport height available */
+  margin: 0;          /* Remove default margin */
   background-color: azure;
   padding: 10px;
 }
+
 h1, h2 {
   margin: 0px;
   background-color: lightgreen;
   padding: 10px;
   text-align: center;
 }
+
 p {
-  background-color: hsl(120,80%,90%); /*lighter lightgreen*/
+  background-color: hsl(120,80%,90%); /* lighter lightgreen */
   padding: 0px 20px;
   text-align: justify;
 }
@@ -21,6 +25,7 @@ nav ul {
   text-align: center;
   padding-left: 0px; 
 }
+
 nav li {
   display: inline-block;
   padding: 0px 4px 2px 4px;
@@ -29,4 +34,15 @@ nav li {
   border: outset;
   border-color: lightgreen;
 }
-nav a {text-decoration: none;}
+
+nav a {
+  text-decoration: none;
+}
+
+/* Make iframe fill remaining space */
+iframe#page {
+  width: 100%;
+  height: calc(100% - 200px); /* Adjust 200px to match your header + nav height */
+  border: none;
+  display: block;
+}
